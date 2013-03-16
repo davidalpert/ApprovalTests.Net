@@ -12,6 +12,7 @@ namespace ApprovalTests.Tests.NHibernate
 	[TestFixture]
 	public class NHibernateTest
 	{
+        [Ignore("System.Data.SqlClient.SqlException: ... provider: Shared Memory Provider, error: 40 - Could not open a connection to SQL Server")]
 		[Test]
 		public void TestSimpleQuery()
 		{
