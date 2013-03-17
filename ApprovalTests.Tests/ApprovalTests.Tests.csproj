@@ -144,6 +144,7 @@
     <Compile Include="NHibernate\Event.cs" />
     <Compile Include="NHibernate\Job.cs" />
     <Compile Include="NHibernate\NHibernateTest.cs" />
+    <Compile Include="Reporters\ClipboardReporterTest.cs" />
     <Compile Include="Reporters\NonNUnitReporterTest.cs" />
     <Compile Include="StringEncodingTest.cs" />
     <Compile Include="WinForms\DemoForm.cs">

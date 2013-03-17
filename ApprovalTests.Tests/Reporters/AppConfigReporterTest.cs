@@ -9,7 +9,12 @@ namespace ApprovalTests.Tests.Reporters
 		[Test]
 		public void Test()
 		{
-			Assert.IsInstanceOf<DiffReporter>(new AppConfigReporter().Reporter);
+            // because the app.config file contains this:
+            // <appSettings>
+            //    <add key="UseReporter" value="ApprovalTests.Reporters.DiffReporter, ApprovalTests" />
+            // </appSettings>
+            //
+            Assert.IsInstanceOf<DiffReporter>(new AppConfigReporter().Reporter);
 		}
 	}
 }
